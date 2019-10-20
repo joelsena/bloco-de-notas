@@ -29,7 +29,9 @@ public class Notas extends JFrame{
 
 	public Notas() {
 		setTitle("Bloco de notas");
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/icons/logo.png")));
 		menuBar = new JMenuBar();
+		menuBar.setBorderPainted(false);
 		setJMenuBar(menuBar);
 		arquivo = new JMenu("Arquivo");
 		menuBar.add(arquivo);
